@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WordWander</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>WordWander</h1>
+    <p class="subheading">Guess the word from its definition</p>
+    
+    <div id="gameBox">
+      <p id="definition">Loading definition...</p>
+      <input type="text" id="userInput" placeholder="Type your guess here..." />
+      <button onclick="checkAnswer()">Submit</button>
+      <p id="feedback"></p>
+    </div>
+
+    <button id="nextBtn" onclick="getNewWord()">Next Word </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
